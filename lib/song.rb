@@ -61,7 +61,7 @@ class Song
     # song.artist_name = new_array[0]
     # song
 
-    
+
   # rows = data.split(/ - |.mp3/)
   # name = rows[1]
   # artist_n = rows[0]
