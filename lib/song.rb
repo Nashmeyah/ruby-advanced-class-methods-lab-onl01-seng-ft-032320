@@ -46,14 +46,21 @@ class Song
   end
 
   def self.new_from_filename(data)
-  rows = data.split(/ - |.mp3/)
-  name = rows[1]
-  artist_n = rows[0]
 
-  song = self.new
-  song.name = name
-  song.artist_name = artist_n
-  song
+    data.delete_suffix!(".mp3")
+    new_array = data.split(" - ")
+    song = self.new
+    song.name = new_array[1]
+    song.artist_name = new_array[0]
+    song
+  # rows = data.split(/ - |.mp3/)
+  # name = rows[1]
+  # artist_n = rows[0]
+  # 
+  # song = self.new
+  # song.name = name
+  # song.artist_name = artist_n
+  # song
   end
 
   def self.create_from_filename(name)
