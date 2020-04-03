@@ -56,7 +56,7 @@ class Song
   # rows = data.split(/ - |.mp3/)
   # name = rows[1]
   # artist_n = rows[0]
-  # 
+  #
   # song = self.new
   # song.name = name
   # song.artist_name = artist_n
