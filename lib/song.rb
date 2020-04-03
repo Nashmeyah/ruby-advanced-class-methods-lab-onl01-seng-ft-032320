@@ -51,6 +51,7 @@ class Song
        name = self.create
        name.name = new_array[1]
        name.artist_name = new_array[0]
+       name
 
     # data.delete_suffix!(".mp3")
     # new_array = data.split(" - ")
@@ -59,6 +60,8 @@ class Song
     # song.name = new_array[1]
     # song.artist_name = new_array[0]
     # song
+
+    
   # rows = data.split(/ - |.mp3/)
   # name = rows[1]
   # artist_n = rows[0]
